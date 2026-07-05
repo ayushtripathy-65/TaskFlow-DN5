@@ -303,3 +303,4 @@ D:\TaskFlow-DN5\TaskFlow.API\bin\Debug\net8.0\runtimes\win-arm\native\e_sqlite3.
 D:\TaskFlow-DN5\TaskFlow.API\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\TaskFlow-DN5\TaskFlow.API\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\TaskFlow-DN5\TaskFlow.API\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\TaskFlow-DN5\TaskFlow.API\obj\Debug\net8.0\TaskFlow.API.sourcelink.json

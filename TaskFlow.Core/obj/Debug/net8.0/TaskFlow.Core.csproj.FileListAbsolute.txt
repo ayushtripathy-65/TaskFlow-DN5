@@ -20,3 +20,4 @@ D:\TaskFlow-DN5\TaskFlow.Core\obj\Debug\net8.0\TaskFlow.Core.dll
 D:\TaskFlow-DN5\TaskFlow.Core\obj\Debug\net8.0\refint\TaskFlow.Core.dll
 D:\TaskFlow-DN5\TaskFlow.Core\obj\Debug\net8.0\TaskFlow.Core.pdb
 D:\TaskFlow-DN5\TaskFlow.Core\obj\Debug\net8.0\ref\TaskFlow.Core.dll
+D:\TaskFlow-DN5\TaskFlow.Core\obj\Debug\net8.0\TaskFlow.Core.sourcelink.json
