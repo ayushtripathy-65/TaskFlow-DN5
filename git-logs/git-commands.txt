@@ -1,0 +1,29 @@
+﻿Git Exercise Log - Cognizant DN 5.0
+====================================
+
+Exercise 1: Initialize Repository
+Command: git init
+Result: Initialized empty Git repository in D:/TaskFlow-DN5/.git/
+
+Exercise 2: Add Remote Repository
+Command: git remote add origin https://github.com/ayushtripathy-65/TaskFlow-DN5.git
+Result: Added remote origin pointing to GitHub
+
+Exercise 3: Stage and Commit
+Command: git add .
+Command: git commit -m "Initial commit"
+Result: Created first commit with all project files
+
+Exercise 4: Push to Remote
+Command: git push -u origin main
+Result: Pushed all files to GitHub repository
+
+Exercise 5: Branch and Merge
+Command: git branch feature/controllers
+Command: git checkout feature/controllers
+Command: git add .
+Command: git commit -m "Added CRUD controllers"
+Command: git checkout main
+Command: git merge feature/controllers
+Command: git push origin main
+Result: Created feature branch, committed changes, merged back to main
