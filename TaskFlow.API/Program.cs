@@ -4,6 +4,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using TaskFlow.API.Data;
 using TaskFlow.API.Mapping;
+using TaskFlow.API.Middleware;
+using TaskFlow.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,9 +34,16 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<TaskFlowDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<JwtService>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
