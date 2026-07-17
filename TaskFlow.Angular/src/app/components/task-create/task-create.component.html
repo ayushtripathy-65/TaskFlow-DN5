@@ -1,0 +1,52 @@
+﻿<div class="form-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Create New Task</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Title</mat-label>
+          <input matInput [(ngModel)]="task.title" name="title" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Description</mat-label>
+          <textarea matInput [(ngModel)]="task.description" name="description" rows="3"></textarea>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Status</mat-label>
+          <mat-select [(ngModel)]="task.status" name="status">
+            <mat-option value="Pending">Pending</mat-option>
+            <mat-option value="InProgress">In Progress</mat-option>
+            <mat-option value="Done">Done</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Priority</mat-label>
+          <mat-select [(ngModel)]="task.priority" name="priority">
+            <mat-option value="Low">Low</mat-option>
+            <mat-option value="Medium">Medium</mat-option>
+            <mat-option value="High">High</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Due Date</mat-label>
+          <input matInput [(ngModel)]="task.dueDate" name="dueDate" type="date">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Project ID</mat-label>
+          <input matInput [(ngModel)]="task.projectId" name="projectId" type="number" required>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" class="full-width">Create Task</button>
+      </form>
+
+      <div *ngIf="error" class="error">{{ error }}</div>
+    </mat-card-content>
+  </mat-card>
+</div>

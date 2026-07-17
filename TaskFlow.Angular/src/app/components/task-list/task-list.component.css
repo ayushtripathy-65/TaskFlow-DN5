@@ -1,0 +1,41 @@
+﻿.task-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.task-card {
+  margin-bottom: 10px;
+}
+.chips {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+.chip {
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.done {
+  background: #4caf50;
+  color: white;
+}
+.inprogress {
+  background: #ff9800;
+  color: white;
+}
+.pending {
+  background: #f44336;
+  color: white;
+}
+.priority {
+  background: #2196f3;
+  color: white;
+}

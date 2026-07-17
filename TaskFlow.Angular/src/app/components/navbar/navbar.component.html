@@ -1,0 +1,12 @@
+﻿<mat-toolbar color="primary">
+  <span>TaskFlow</span>
+  <span class="spacer"></span>
+  <ng-container *ngIf="authService.isAuthenticated$ | async; else loggedOut">
+    <button mat-button routerLink="/tasks">Tasks</button>
+    <button mat-button (click)="logout()">Logout</button>
+  </ng-container>
+  <ng-template #loggedOut>
+    <button mat-button routerLink="/login">Login</button>
+    <button mat-button routerLink="/register">Register</button>
+  </ng-template>
+</mat-toolbar>
